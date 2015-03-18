@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Andrei Shapiro</string>
+	<key>Builder Version</key>
+	<string>9537.85.12.18</string>
+	<key>CFBundleDisplayName</key>
+	<string>ContentEditable</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.contenteditable</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Context Menu Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>toggleDesignMode</string>
+				<key>Identifier</key>
+				<string>toggler</string>
+				<key>Title</key>
+				<string>Toggle ContentEditable</string>
+			</dict>
+		</array>
+		<key>Global Page</key>
+		<string>global.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>toggleDesignMode</string>
+				<key>Identifier</key>
+				<string>toggler</string>
+				<key>Image</key>
+				<string>editable.png</string>
+				<key>Include By Default</key>
+				<true/>
+				<key>Label</key>
+				<string>Content Editable</string>
+				<key>Palette Label</key>
+				<string>Content Editable</string>
+				<key>Tool Tip</key>
+				<string>Toggle page design-mode</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>injected.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Toggle design-mode: set and reset content editable property of the page</string>
+	<key>DeveloperIdentifier</key>
+	<string>CHHPU3A3TB</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://ashapiro.ru</string>
+</dict>
+</plist>

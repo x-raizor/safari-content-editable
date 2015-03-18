@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Design-mode Toggler</title>
+</head>
+<script src="jquery-1.8.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		// set event listener
+		safari.application.addEventListener("command", performCommand, false);
+		
+		// Function to perform when event is received
+		function performCommand(event) {
+	    // Make sure event comes from the button
+		    if (event.command == "toggleDesignMode") {
+		    	safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("toggle");
+		    }
+		}
+	});
+</script>
+<body>
+	
+</body>
+</html>
